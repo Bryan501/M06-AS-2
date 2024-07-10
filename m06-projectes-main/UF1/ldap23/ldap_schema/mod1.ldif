@@ -1,0 +1,15 @@
+dn: uid=pere,ou=usuaris,dc=edt,dc=org
+changetype: modify
+replace: mail
+mail: nou@nou.cat
+
+dn: uid=anna,ou=usuaris,dc=edt,dc=org
+changetype: modify
+replace: mail
+mail: mmmmm@mail.cat
+
+dn: uid=anna,ou=usuaris,dc=edt,dc=org
+changetype: modify
+replace: homePhone
+homePhone: 000000000
+

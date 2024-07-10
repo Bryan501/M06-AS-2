@@ -1,0 +1,5 @@
+dn: x-nom=dembele,ou=usuaris,dc=edt,dc=org
+objectClass: x-futbolista
+x-equip: psg
+x-lesionat: TRUE
+x-dorsal: 22

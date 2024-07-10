@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  ldap:
+    image: bryan501/ldap23:latestv2
+    container_name: ldap.edt.org
+    hostname: ldap.edt.org
+    ports: 
+      - "389:389"
+    networks:
+     - 2hisx
+
+  phpldapadmin:
+    image: bryan501/phpldapadmin23:v2
+    container_name: phpldapadmin.edt.org
+    hostname: phpldapadmin.edt.org
+    ports:
+      - "80:80"
+    networks:
+      - 2hisx
+
+networks:
+  2hisx:
+

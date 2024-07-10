@@ -1,0 +1,31 @@
+version: "3"
+services:  
+  ldap:
+    image: bryan501/ldap23:latestv2
+    container_name: ldap.edt.org
+    hostname: ldap.edt.org
+    ports:
+      - "389:389"
+      - "636:636"
+    networks:
+      - 2hisx
+
+  samba:
+    image: bryan501/samba23:home_server
+    container_name: samba.edt.org
+    hostname: samba.edt.org
+    privileged: true
+    networks:
+      - 2hisx
+
+  pam:
+    image: bryan501/pam23:samba
+    container_name: pam.edt.org
+    hostname: pam.edt.org
+    privileged: true
+    networks:
+      - 2hisx 
+
+networks:
+  2hisx:
+

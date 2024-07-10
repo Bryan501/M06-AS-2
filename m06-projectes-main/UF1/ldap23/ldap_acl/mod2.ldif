@@ -1,0 +1,8 @@
+dn: cn=Jordi Mas,ou=usuaris,dc=edt,dc=org
+changeType: modify
+delete: mail
+-
+add: mail
+mail: m1@edt.org
+mail: m2@edt.org
+mail: m3@edt.org

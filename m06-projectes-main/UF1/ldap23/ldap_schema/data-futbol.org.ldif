@@ -1,0 +1,13 @@
+dn: ou=futboleros,dc=edt,dc=org
+ou: futboleros
+description: Els nostres futbolistas
+ObjectClass: organizationalunit
+
+dn: cn=kessie,ou=futboleros,dc=edt,dc=org
+objectClass: x-futbolista
+cn: kessie
+sn: lo crack petat
+x-equip: al-arabia
+x-lesionat: FALSE
+x-dorsal: 22
+

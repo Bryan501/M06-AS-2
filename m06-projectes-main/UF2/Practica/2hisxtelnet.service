@@ -1,0 +1,11 @@
+[Unit]
+Description=Script que gestionarà al servei que actua com un servidor telnet
+After=syslog.target network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/admin/
+ExecStart=/usr/bin/python3 26-telnet-server-one2one.py
+
+[Install]
+WantedBy=multi-user.target

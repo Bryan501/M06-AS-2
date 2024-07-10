@@ -1,0 +1,42 @@
+dn: dc=example,dc=com
+dc: example
+description: Exemple LDAP
+objectClass: dcObject
+objectClass: organization
+o: example.com
+
+dn: ou=users,dc=example,dc=com
+ou: users
+description: Grups pels usuaris
+objectclass: organizationalunit
+
+dn: cn=admin,ou=users,dc=example,dc=com
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Admin
+cn: Admin
+sn: Ad
+homephone: 555-222-2220
+mail: admin@example.com
+description: Usuari Administrador
+ou: users
+uid: admin
+uidNumber: 5000
+gidNumber: 601
+homeDirectory: /tmp/home/admin
+userPassword: adminpassword
+
+dn: uid=user1,ou=users,dc=example,dc=com
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user1
+sn: u1
+homephone: 555-222-2223
+mail: user1@example.com
+description: Usuari Client 1
+ou: users
+uid: user1
+uidNumber: 5003
+gidNumber: 600
+homeDirectory: /tmp/home/user1
+userPassword: user1password

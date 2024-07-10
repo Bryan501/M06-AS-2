@@ -1,0 +1,32 @@
+dn: cn=usuari0,ou=Asix,dc=edt,dc=org
+changetype: modify
+replace: cn
+cn: user0
+cn: user0 user
+-
+replace: sn
+sn: user
+-
+replace: homephone
+homephone: 111-222-3333
+-
+replace: mail
+mail: user0_edit@edt.org
+-
+replace: description
+description: Nova descripcio editada
+-
+replace: uidNumber
+uidNumber: 5030
+-
+replace: gidNumber
+gidNumber: 120
+-
+replace: homeDirectory
+homeDirectory: /tmp/home/user0
+-
+replace: userPassword
+userPassword: user0
+
+
+

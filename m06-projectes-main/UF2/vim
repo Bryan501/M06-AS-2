@@ -1,0 +1,44 @@
+#! /usr/bin/python3
+#-*- coding: utf-8 -*-
+# 
+# M06 Curs 2023-2024
+# telnet-server.py
+# --------------------------------------
+import sys, socket, argparse, signal
+from subprocess import Popen, PIPE
+parser=argparse.ArgumentParser(description="telnet server")
+parser.add_argument("-p","--port", type=int,\
+        metavar="port",\
+        dest="port",\
+        default=50001)
+args=parser.parse_args()
+HOST=''
+PORT=args.port
+ACABAR=bytes(chr(4),'utf-8')
+
+# -------------------------------
+def myusr(signum, frame):
+    print("Signal handler with signal: ", signum)
+    print("Connexió tancada")
+    sys.exit(0)
+
+signal.signal(signal.SIGUSR1, myusr)
+# ------------------------------
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR,1)
+s.bind((HOST,PORT))
+s.listen(1)
+while True:
+    conn, addr = s.accept()
+    print("Connexió per: ", addr)
+    while True:
+        ordre = conn.recv(1024)
+        if not ordre: break
+        pipeData = Popen(ordre, stdout=PIPE, stderr=PIPE, shell=True)
+        for line in pipeData.stdout:
+            conn.sendall(line)
+        conn.sendall(ACABAR)
+    conn.close()
+s.close()
+sys.exit(0)
+

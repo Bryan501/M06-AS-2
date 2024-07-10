@@ -1,0 +1,6 @@
+dn: cn=dembele,ou=usuaris,dc=edt,dc=org
+objectClass: x-futbolista
+cn: dembele
+sn: lo crack petat
+x-equip: psg
+x-lesionat: TRUE

@@ -1,0 +1,217 @@
+dn: dc=edt,dc=org
+dc: edt
+description: Escola del treball de Barcelona
+objectClass: dcObject
+objectClass: organization
+o: edt.org
+
+dn: ou=Asix,dc=edt,dc=org
+ou: Asix
+description: Container per els asix del sistema linux
+objectclass: organizationalunit
+
+dn: ou=AntiAsix,dc=edt,dc=org
+ou: Asix
+description: Container per els antiasix del sistema linux
+objectclass: organizationalunit
+
+dn: uid=user01,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user01
+sn: usuari01
+homephone: 555-222-2220
+mail: usuari0@edt.org
+description: Watch out for this guy
+ou: Asix 
+uid: user01
+uidNumber: 5000
+gidNumber: 100
+homeDirectory: /home/user01
+userPassword: {SSHA}tWkj/NWcStWT0u+u4HYvf23eaRhYtPYR
+
+dn: uid=user02,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user02
+sn: usuari02
+homephone: 555-222-2221
+mail: usuari1@edt.org
+description: Watch out for this guy
+ou: Asix
+uid: user02
+uidNumber: 5001
+gidNumber: 100
+homeDirectory: /home/user02
+userPassword: {SSHA}OVz4p9rsOCmuzUH49uUx/PTQHidAX2NX
+
+dn: uid=user03,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user03
+sn: usuari03
+homephone: 555-222-2222
+mail: usuari2@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user03
+uidNumber: 5002
+gidNumber: 600
+homeDirectory: /home/user03
+userPassword: {SSHA}AtGV6D5P/YQ07XN2c+Bcex84dSFn8odd
+
+dn: uid=user04,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user04
+sn: usuari04
+homephone: 555-222-2223
+mail: usuari3@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user04
+uidNumber: 5003
+gidNumber: 600
+homeDirectory: /home/user04
+userPassword: {SSHA}QWsbNGIAVR8b36H4Lj36wm2FXpejmjFk
+
+dn: uid=user05,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user05
+sn: usuari05
+homephone: 555-222-2224
+mail: usuari4@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user05
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /home/user05
+userPassword: {SSHA}kzW0zp/+2Cbc+8tJYl26+iGSuY58TNa/
+
+dn: uid=user06,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user06
+sn: usuari06
+homephone: 555-222-2224
+mail: usuari5@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user06
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /home/user06
+userPassword: {SSHA}jzwpD9kkG0c0gYjGgSRpzFUoxzXx9Tla
+
+dn: uid=user07,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user07
+sn: usuari07
+homephone: 555-222-2224
+mail: usuari6@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user07
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /home/user07
+userPassword: {SSHA}49vxSqSzW1vcXuPB0Ty5VQhi3MBeyla5
+
+
+dn: uid=user08,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user08
+sn: usuari08
+homephone: 555-222-2224
+mail: usuari7@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user08
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /home/user08
+userPassword: {SSHA}pUUjnlChFQlqGlp2qMNtpuj5VxgbcKs9
+
+
+dn: uid=user09,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user09
+sn: usuari09
+homephone: 555-222-2224
+mail: usuari8@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user09
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /home/user09
+userPassword: {SSHA}qTY2/PIw9DsCtNnDZK/u4rQjHTGSaBsI
+
+dn: uid=user10,ou=usuaris,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user10
+sn: usuari10
+homephone: 555-222-2224
+mail: usuari9@edt.org
+description: Watch out for this girl
+ou: Asix
+uid: user10
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /home/user10
+userPassword: {SSHA}HSkB11eOgrMaky1iAmCZiFDDLkTdmSLU
+
+dn: uid=Pol Sanjurjo,ou=Asix,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Polete
+cn: Pop
+sn: Sanjurjo
+homephone: 555-222-2225
+mail: polsanjurjo@edt.org
+description: Aquest noi es ros
+ou: AntiAsix
+uid: Pol Sanjurjo
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /tmp/home/sanjurjo
+userPassword: {SSHA}cDDURbhITwNmvgIIBms12BVnCTs8ydgN
+
+dn: uid=Eustaqui Eus,ou=AntiAsix,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Eustaqui Eus
+cn: Eustaqui Eus Us
+sn: Eustaqui Eus
+homephone: 555-222-2224
+mail: esutaqui@edt.org
+description: Watch out for this guy
+ou: AntiAsix
+uid: Eustaqui Eus
+uidNumber: 5004
+gidNumber: 100
+homeDirectory: /tmp/home/eustaqui
+userPassword: {SSHA}s+k4NK6fSwI3JtJ4pZUE3fcoZTZ2hUnR
+
+dn: cn=Admin System,ou=Asix,dc=edt,dc=org
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Administrador Sistema
+cn: System Admin
+sn: System
+homephone: 555-222-2225
+mail: anna@edt.org
+description: Watch out for this girl
+ou: system
+ou: admin
+uid: admin
+uidNumber: 10
+gidNumber: 10
+homeDirectory: /tmp/home/admin
+userPassword: {SSHA}4mS0FycWc5bkpW8/a396SGNDTQUlFSX3

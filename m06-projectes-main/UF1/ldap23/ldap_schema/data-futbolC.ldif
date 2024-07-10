@@ -1,0 +1,20 @@
+cat: data-futbolC: No such file or directory
+root@ldap:/opt/docker# cat data-futbolC.ldif 
+dn: cn=ramon ferrer,ou=usuaris,dc=edt,dc=org
+objectClass: x-futbolista
+objectClass: InetOrgPerson
+cn: ramon ferrer
+sn: ramon
+mail: ramon@edt.org
+x-equip: solters
+x-lesionat: TRUE
+
+dn: cn=ferran roig,ou=usuaris,dc=edt,dc=org
+objectClass: x-futbolista
+objectClass: InetOrgPerson
+cn: ferran roig
+sn: ferran
+x-equip: espanyol
+x-dorsal: 4
+mail: ferran@edt.org
+

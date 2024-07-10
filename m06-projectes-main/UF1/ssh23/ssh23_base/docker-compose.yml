@@ -1,0 +1,21 @@
+version: "3"
+services:
+  ssh:
+    image: bryan501/ssh23:latest
+    container_name: ssh.edt.org
+    hostname: ssh.edt.org
+    networks:
+      - 2hisx
+    privileged: true
+    ports:
+      - "2022:22"
+
+  ldap:
+    image: bryan501/ldap23:latestv2
+    container_name: ldap.edt.org
+    hostname: ldap.edt.org
+    networks:
+      - 2hisx
+networks:
+  2hisx:
+
