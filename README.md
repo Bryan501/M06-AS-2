@@ -6,9 +6,8 @@ Llistat d'exercicis dels projectes fets a M06
 
 per clonar el repositori:
 ```bash
-git clone https://gitlab.com/isx.alvitres.valdiviezo.bryan/m06-projectes.git
+git clone git@github.com:Bryan501/M06-AS-2.git
 ```
-
 Per pujar els apunts:
 ```bash
 git add . ; git commit -m "asd" ; git push origin master
